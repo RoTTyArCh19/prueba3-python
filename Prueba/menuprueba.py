@@ -37,7 +37,7 @@ while True:
     print("6.Salir del Programa")
     print("------------------------------")
     
-    opcion = input("Ingrese una opcion: ")
+    opcion = int(input("Ingrese una opcion: "))
     
     if opcion == 1:
         fn.registarlibro(Libreria)
