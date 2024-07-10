@@ -26,6 +26,7 @@
 import funcionesprueba as fn
 
 Libreria = []
+Ventas = []
 
 while True:
     print("-------------MENU-------------")
