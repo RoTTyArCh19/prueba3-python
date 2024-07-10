@@ -2,11 +2,12 @@ TIPOLIBRO = ['ficcion','no ficcion', 'ciencia']
 def registarlibro(libreria):
     titulo = input("Ingrese titulo del libro: ") 
     autor = input("Ingrese autor del libro: ")
-    tipolib = input("ingrese el genero del libro ficcion/no ficcion/ciencia").lower()
+    tipolib = input("ingrese el genero del libro ficcion/no ficcion/ciencia: ").lower()
     while tipolib in TIPOLIBRO:
         print("tipo de libro no existe")
         tipolib = input("Ingrese el genero del libro ficcion/no ficcion/ciencia : ").lower()
     precio = int(input("ingrese el valor del libro:"))
+    stock = int(input("Ingrese cantidad de libros: "))
     libreria.append({
         'titulo' : titulo,
         'autor'  : autor,
